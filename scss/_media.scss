@@ -1,0 +1,28 @@
+$dekstop-laptop: 1366px;
+$laptop-tablet: 1199px;
+$tablet-mobile: 599px;
+$low-mobile: 479px;
+
+@mixin dekstop-laptop {
+  @media (max-width: $dekstop-laptop) {
+    @content;
+  }
+}
+
+@mixin laptop-tablet {
+  @media (max-width: $laptop-tablet) {
+    @content;
+  }
+}
+
+@mixin tablet-mobile {
+  @media (max-width: $tablet-mobile) {
+    @content;
+  }
+}
+
+@mixin low-mobile {
+  @media (max-width: $low-mobile) {
+    @content;
+  }
+}
