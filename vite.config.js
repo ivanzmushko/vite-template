@@ -4,9 +4,9 @@ import sassGlobImports from 'vite-plugin-sass-glob-import';
 import { resolve } from 'path';
 import { exec } from 'child_process';
 
-/* async function postBuildCommands () {
-  exec(`sh build.sh`)
-} */
+async function postBuildCommands () {
+    exec(`sh build.sh`)
+}
 
 const root = resolve(__dirname, '');
 const outDir = resolve(__dirname, 'dist');
@@ -18,12 +18,12 @@ export default defineConfig({
         injectHTML({}),
         sassGlobImports(),
         {
-	  name: 'postbuild-commands', // the name of your custom plugin. Could be anything.
-    	  closeBundle: async () => {
-    	    await postBuildCommands() // run during closeBundle hook. https://rollupjs.org/guide/en/#closebundle
-        }
-    },
-        
+            name: 'postbuild-commands', // the name of your custom plugin. Could be anything.
+            closeBundle: async () => {
+                await postBuildCommands() // run during closeBundle hook. https://rollupjs.org/guide/en/#closebundle
+            }
+        },
+
     ],
     server: {
         open: true,
