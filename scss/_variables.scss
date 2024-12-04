@@ -1,12 +1,11 @@
-:root {
-  --color-white: #FFFFFF;
-  --color-black: #000000;
+ $color-white: #FFFFFF;
+  $color-black: #000000;
+  $color: green;
 
-  --font-family-base: 'Gilroy', sans-serif; // Пример основного шрифта
+  $font-family-base: 'Gilroy', sans-serif; // Пример основного шрифта
 
-  --container-width: 1380px; // Ширина контейнера
-  --container-padding-x: 20px;
+  $container-width: 1380px; // Ширина контейнера
+  $container-padding-x: 20px;
 
-  --transition-duration: 0.2s;
+  $transition-duration: 0.2s;
 
-}

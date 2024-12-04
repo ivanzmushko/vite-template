@@ -1,3 +1,5 @@
+@use 'scss/imports' as *;
+
 html {
   font-size: 16px;
   height: 100%;
@@ -7,8 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  //color: var(--color-black); Основной цвет шрифта сайта
-  font-family: var(--font-family-base);
+  //color: $color-black; Основной цвет шрифта сайта
+  font-family: $font-family-base;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -42,7 +44,7 @@ button,
 input,
 textarea,
 svg * {
-  transition-duration: var(--transition-duration);
+  transition-duration: $transition-duration;
 }
 
 a {
@@ -51,7 +53,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  //color: var(--color-black);
+  //color: $color-black;
   //font-style: normal;
   //line-height: 3rem;
   //font-weight: 700;

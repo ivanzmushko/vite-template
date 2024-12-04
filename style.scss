@@ -1,7 +1,9 @@
-@import 'scss/normalize', 'scss/fonts', 'scss/mixins', 'scss/media', 'scss/variables', 'scss/utils', 'scss/globals'; // Подключение основных scss файлов
+@use 'scss/normalize';
+@use 'scss/fonts';
+@use 'scss/utils';
+@use 'scss/globals'; // Подключение основных scss файлов
 
-// @import 'scss/custom-swiper'; Если надо переопределить стили свайпера
+@use 'scss/blocks/header';
+@use 'scss/blocks/footer'; // Подключение стилей блоков
 
-@import 'scss/blocks/header', 'scss/blocks/footer'; // Подключение стилей блоков
-
-@import 'scss/pages/main-page'; // Подключение стилей страниц
+@use 'scss/pages/main-page'; // Подключение стилей страниц
