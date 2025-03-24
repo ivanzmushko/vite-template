@@ -35,7 +35,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(root, 'index.html'),
-                404: resolve(root, '404.html'),
+                // 404: resolve(root, '404.html'),
             },
             output: {
                 entryFileNames: `js/[name].js`,
