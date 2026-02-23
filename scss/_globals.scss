@@ -3,6 +3,11 @@
 html {
   font-size: 16px;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  transition-duration: $transition-duration;
 }
 
 body {
@@ -11,7 +16,7 @@ body {
   min-height: 100%;
   //color: $color-black; Основной цвет шрифта сайта
   font-family: $font-family-base;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

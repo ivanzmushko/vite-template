@@ -3,3 +3,9 @@
     opacity: $opacity_value;
   }
 }
+
+@mixin hover-brightness($brightness_value) {
+  &:hover {
+    filter: brightness($brightness_value);
+  }
+}
